@@ -1,4 +1,4 @@
- What is FlatList in React Native and how does it differ from ScrollView?
+What is FlatList in React Native and how does it differ from ScrollView?
 Answer: FlatList is a component used to render large lists efficiently by only rendering the items that are visible on the screen. It is optimized for performance, especially for large datasets. ScrollView, on the other hand, renders all its children at once, which can lead to performance issues when the list size grows.
 2. How do you optimize the performance of a FlatList?
 Answer: Some ways to optimize FlatList performance include:
