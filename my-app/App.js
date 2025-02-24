@@ -1,9 +1,9 @@
-import Example1 from './components/FlatListExample/Example1'
+import GoalsProject from "./BasicProjects/GoalsProject"
 export default function App() {
 
   return (
     <>
-      <Example1 />
+      <GoalsProject />
     </>
   )
 
