@@ -1,0 +1,20 @@
+FlatList Questions
+Create a FlatList that renders 100 items, each displaying a unique ID and a random color as the background.
+
+Implement a FlatList with horizontal scrolling that displays a list of images.
+
+Add a "Load More" button at the end of a FlatList that appends 10 more items to the list when clicked.
+
+Create a FlatList with sections (grouped data) and render section headers.
+
+Implement a FlatList with a search bar that filters the list based on user input.
+
+Add a pull-to-refresh functionality to a FlatList that fetches new data from an API.
+
+Create a FlatList with sticky headers that remain visible while scrolling through sections.
+
+Implement a FlatList with lazy-loaded images that load only when they come into the viewport.
+
+Add a checkbox to each item in a FlatList and implement a "Select All" feature.
+
+Create a FlatList with drag-and-drop functionality to reorder items.

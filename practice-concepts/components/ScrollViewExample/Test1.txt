@@ -1,0 +1,43 @@
+Here are 10 practical questions each for ScrollView and FlatList to help you practice and understand their implementation in a React Native project using VS Code:
+
+ScrollView Questions
+Create a ScrollView that contains 50 Text components displaying numbers from 1 to 50.
+
+Implement a ScrollView with horizontal scrolling that displays a row of 20 colored boxes.
+
+Add a ScrollView to a screen and ensure it scrolls only when the content exceeds the screen height.
+
+Create a ScrollView with a header (fixed at the top) and a footer (fixed at the bottom), with scrollable content in between.
+
+Implement a ScrollView with a refresh control that logs "Refreshed!" when pulled down.
+
+Nest a ScrollView inside another ScrollView and observe the behavior. Fix any issues if scrolling doesn't work as expected.
+
+Add a button inside a ScrollView that scrolls to the bottom of the content when pressed.
+
+Create a ScrollView with sticky headers that remain visible while scrolling through sections.
+
+Implement a ScrollView with lazy-loaded images that load only when they come into the viewport.
+
+Add a ScrollView to a form with multiple input fields and ensure the keyboard does not overlap the inputs.
+
+FlatList Questions
+Create a FlatList that renders 100 items, each displaying a unique ID and a random color as the background.
+
+Implement a FlatList with horizontal scrolling that displays a list of images.
+
+Add a "Load More" button at the end of a FlatList that appends 10 more items to the list when clicked.
+
+Create a FlatList with sections (grouped data) and render section headers.
+
+Implement a FlatList with a search bar that filters the list based on user input.
+
+Add a pull-to-refresh functionality to a FlatList that fetches new data from an API.
+
+Create a FlatList with sticky headers that remain visible while scrolling through sections.
+
+Implement a FlatList with lazy-loaded images that load only when they come into the viewport.
+
+Add a checkbox to each item in a FlatList and implement a "Select All" feature.
+
+Create a FlatList with drag-and-drop functionality to reorder items.
