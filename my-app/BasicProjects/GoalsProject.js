@@ -21,7 +21,6 @@ export default function GoalsProject() {
 
   // Delete goal based on the index
   const deleteGoal = (index) => {
-    // Create a new array excluding the goal at the specified index
     const newGoals = goals.filter((_, goalIndex) => goalIndex !== index);
     setGoals(newGoals);
   }
@@ -151,5 +150,8 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 10,
     marginLeft: 10,
+  },
+  listContainer: {
+    flex: 1
   }
 });
