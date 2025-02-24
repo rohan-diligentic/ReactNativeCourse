@@ -1,0 +1,106 @@
+React Native, the ScrollView component is a commonly used element to create scrollable areas within an app. Here are the top props that are frequently used with ScrollView:
+
+1. contentContainerStyle
+Type: ViewStyle
+This prop allows you to apply styles to the container of the scrollable content. It is useful when you want to add padding, margin, or any other styles to the content inside the scroll view.
+
+
+<ScrollView contentContainerStyle={{ padding: 20 }}>
+
+</ScrollView>
+
+2. horizontal
+Type: boolean
+Determines whether the scroll view should be horizontal or vertical. By default, ScrollView is vertical, but setting this prop to true makes it horizontal.
+
+
+<ScrollView horizontal>
+
+</ScrollView>
+3. onScroll
+Type: function
+A callback function that is triggered whenever the scroll position changes. This is often used to implement features like infinite scroll or lazy loading.
+
+
+<ScrollView onScroll={(event) => console.log(event.nativeEvent.contentOffset)}>
+
+</ScrollView>
+4. scrollEventThrottle
+Type: number
+Controls how often the scroll event callback (onScroll) should be fired. This value represents the number of milliseconds between consecutive events. Lower values provide more frequent updates, while higher values reduce the frequency.
+
+
+<ScrollView onScroll={handleScroll} scrollEventThrottle={16}>
+
+</ScrollView>
+5. refreshControl
+Type: ReactNode
+This prop is used to add pull-to-refresh functionality. It takes a RefreshControl component, which manages the refreshing state.
+
+
+import { RefreshControl } from 'react-native';
+
+<ScrollView refreshControl={<RefreshControl refreshing={isRefreshing} onRefresh={handleRefresh} />}>
+
+</ScrollView>
+6. pagingEnabled
+Type: boolean
+When set to true, the scroll view snaps to the next page, making it behave like a pager. It’s often used for horizontal scrolling with specific fixed-width items.
+
+
+<ScrollView horizontal pagingEnabled>
+
+</ScrollView>
+7. keyboardShouldPersistTaps
+Type: 'always' | 'handled' | 'none'
+This controls whether the keyboard should remain visible when tapping outside of a text input.
+'always': The keyboard stays visible after tapping any part of the scroll view.
+'handled': The keyboard dismisses if the tap is outside any input field.
+'none': Tapping anywhere inside the scroll view does not affect the keyboard.
+
+
+<ScrollView keyboardShouldPersistTaps="handled">
+
+</ScrollView>
+8. showsVerticalScrollIndicator
+Type: boolean
+Determines whether the vertical scroll indicator is visible. By default, it is true, but setting it to false hides it.
+
+
+<ScrollView showsVerticalScrollIndicator={false}>
+
+</ScrollView>
+9. showsHorizontalScrollIndicator
+Type: boolean
+Determines whether the horizontal scroll indicator is visible. Similar to showsVerticalScrollIndicator, this controls the visibility of the horizontal scrollbar.
+
+
+<ScrollView showsHorizontalScrollIndicator={false}>
+
+</ScrollView>
+10. onContentSizeChange
+Type: function
+A callback function that is triggered when the content size of the ScrollView changes. It gives you the width and height of the content area.
+
+
+<ScrollView onContentSizeChange={(contentWidth, contentHeight) => console.log(contentWidth, contentHeight)}>
+
+</ScrollView>
+11. scrollEnabled
+Type: boolean
+Controls whether the scroll view is scrollable or not. If set to false, the scroll view will be disabled, and no scrolling will be possible.
+
+
+<ScrollView scrollEnabled={false}>
+
+</ScrollView>
+ 
+12. decelerationRate
+Type: 'fast' | 'normal'
+This prop controls the speed of the scroll view's deceleration after the user stops interacting with it. The value 'fast' will slow down the scroll view quickly, while 'normal' will decelerate it at a standard rate.
+
+
+<ScrollView decelerationRate="fast">
+
+</ScrollView>
+These are some of the most commonly used props with ScrollView in React Native, allowing you to control the layout, behavior, and interaction of the scrollable content.
